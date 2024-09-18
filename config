@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "devops"
+  cluster:
+    server: "https://35.244.20.251/k8s/clusters/c-m-kc4wmdl8"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2RENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      GN5TmpVMwpPREV3TkRBZUZ3MHlOREE1TVRjeE16QXhORFJhRncwek5EQTVNVFV4TXpBeE5EUmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE56STJOVGM0TVRBME1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRWREWFhpZVh0VDNwRgpJdDNldWloMHE3U3JCRnlFZWJUN0ltNSt0Y\
+      U9HVjRkNm5IV2dhMkY2YVV5akV6bkhmd1FiRXJOQ2VoQ2MvcXpWCmt5Z0thQmU5L2FOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGS\
+      zA2RklxTXlvVGUzUHcraXpyeThsaDgyUGdPTUFvR0NDcUdTTTQ5QkFNQ0EwY0FNRVFDSUNGQwp3S\
+      UQ2WWltd1FDaHl2ajZlYjNERlJGYUZVa3hWVnY3R3cwWkRDMjZ3QWlCQU9CdDNJYXZsZ204Z081Y\
+      mRPMk1ZCmI1NkphTVZab0E2czlTS3F0NlRNa1E9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "devops"
+  user:
+    token: "kubeconfig-user-dsz2wbwcqg:g5zk7gttqjq5wwbndn8mdxfnk799n5zmsjcnhb7glqmkmnp6ngtpsl"
+
+
+contexts:
+- name: "devops"
+  context:
+    user: "devops"
+    cluster: "devops"
+
+current-context: "devops"
+
